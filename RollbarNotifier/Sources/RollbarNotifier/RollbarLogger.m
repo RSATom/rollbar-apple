@@ -1031,7 +1031,7 @@ static RollbarLogger *sharedSingleton = nil;
                        error:(NSError *)error
                         data:(NSData *)data {
 
-    NSLog(@"HTTP response from Rollbar: %@", response);
+    // NSLog(@"HTTP response from Rollbar: %@", response);
 
     // Lookup rate limiting headers and adjust reporting rate accordingly:
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
